@@ -1,6 +1,6 @@
 {
   "name": "covid19",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,16 +12,25 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
+    "@angular/cdk": "^7.3.0",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.0",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
+    "@angular/material": "^7.3.0",
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "animate.css": "^3.7.0",
+    "bootstrap": "^5.1.0",
+    "chart.js": "^2.8.0",
     "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
+    "moment": "^2.29.0",
+    "ng2-charts": "^2.2.0",
+    "ngx-toastr": "^9.1.1",
+    "rxjs": "6.0.0",
+    "subsink": "^1.0.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

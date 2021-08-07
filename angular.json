@@ -50,7 +50,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "covid19:build"
+            "browserTarget": "covid19:build",
+            "port": 8033
           },
           "configurations": {
             "production": {
