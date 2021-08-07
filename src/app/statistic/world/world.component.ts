@@ -14,7 +14,9 @@ export class WorldComponent implements OnInit, OnDestroy {
   
   private subs = new SubSink();
   
-  constructor(private dsvc: DataService) { this.dsvc.loader = true; }
+  constructor(private dsvc: DataService) {
+    this.dsvc.loader = true;
+  }
 
   ngOnInit() {
     this.getWorldStats();

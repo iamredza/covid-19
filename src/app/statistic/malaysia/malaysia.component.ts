@@ -62,7 +62,7 @@ export class MalaysiaComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.getMalaysiaStats();
     this.getMalaysiaHistoricalStats();
-    this.getMalaysiaVaccinationStats();
+    // this.getMalaysiaVaccinationStats();
   }
 
   ngOnDestroy() {
@@ -136,7 +136,9 @@ export class MalaysiaComponent implements OnInit, OnDestroy {
           this.lineRecoveredChartLabels = Object.keys(this.historical.recovered).filter(k => { return k });
           this.chart_recovered.push({ data: Object.values(this.historical.recovered).filter(v => { return v }), label: "Recovered" });
         }
+      this.dsvc.loader = false;
         
+      window.scrollTo(0, 0);
     }),
     error => {
       alert('Data unreachable!');
