@@ -1,0 +1,22 @@
+<div class="hover_bkgr_fricc" *ngIf="dsvc.loader">
+  <span class="helper"></span>
+  <div style="display: inline-table;">
+    <mat-spinner color="accent"></mat-spinner>
+  </div>
+</div>
+<app-header></app-header>
+<div class="container-fluid bg-white border border-light" style="padding-bottom: 100px;">
+  <mat-tab-group class="sticky-top">
+  <mat-tab label="Malaysia">
+    <div class="p-1 overflow-hidden">
+      <app-malaysia></app-malaysia>
+    </div>
+  </mat-tab>
+  <mat-tab label="World">
+    <div class="p-1 overflow-hidden">
+      <app-world></app-world>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+</div>
+<app-footer></app-footer>
