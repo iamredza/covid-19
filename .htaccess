@@ -1,6 +1,6 @@
 RewriteEngine on
 RewriteCond %{HTTPS} on
-RewriteCond %{HTTP_HOST} (www\.)?iamredza.github.io
+RewriteCond %{HTTP_HOST} (www\.)?iamredza.github.io/covid-19
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
