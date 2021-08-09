@@ -1,7 +1,8 @@
 RewriteEngine on
 RewriteCond %{HTTPS} on
-RewriteCond %{HTTP_HOST} (www\.)?iamredza.github.io/covid-19/
+RewriteCond %{HTTP_HOST} (www\.)?iamredza.github.io
 
+RewriteBase /covid-19/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # not rewrite css, js and images
