@@ -1,11 +1,11 @@
 RewriteEngine on
 RewriteCond %{HTTPS} on
-RewriteCond %{HTTP_HOST} (www\.)?iamredza.github.io/covid-19
+RewriteCond %{HTTP_HOST} (www\.)?iamredza.github.io/covid-19/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 # not rewrite css, js and images
 RewriteCond %{REQUEST_URI} !\.(?:css|js|map|jpe?g|gif|png)$ [NC]
-RewriteRule ^(.*)$ /covid-19/index.html?path=$1 [NC,L,QSA]
+RewriteRule ^(.*)$ /index.html?path=$1 [NC,L,QSA]
 
 Header always set Content-Security-Policy: upgrade-insecure-requests
